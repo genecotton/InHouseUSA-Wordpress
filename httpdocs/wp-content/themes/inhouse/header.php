@@ -68,7 +68,9 @@
     <? if (is_front_page()) { ?>
     <div id="homePageWrapper">
     <div id="homeSlider">
-    	<img src="/wp-content/themes/inhouse/images/home-slide-Temp.png" width="960" height="534">
+        <div align="center">
+        <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+        </div>
     </div>
     <div class="homeContent container_12 clearfix" role="main">
     <? } else { ?>
