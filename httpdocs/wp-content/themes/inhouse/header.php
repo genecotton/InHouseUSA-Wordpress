@@ -75,7 +75,7 @@
         </div>
     </div>
     <div class="homeContent container_12 clearfix" role="main">
-    <? } else { ?>
+    <?php } else { ?>
     <div id="insidePageWrapper">
 	<div class="insideContent container_12 clearfix" role="main">
-    <? } ?>
+    <?php } ?>
