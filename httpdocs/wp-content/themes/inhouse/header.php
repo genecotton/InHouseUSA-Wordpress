@@ -26,7 +26,9 @@
 		?></title>
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-		<link rel="stylesheet" href="/wp-content/themes/inhouse/css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="/wp-content/themes/inhouse/css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="/wp-content/themes/inhouse/css/prettyPhoto.css" />
+		<link rel="stylesheet" type="text/css" href="/wp-content/themes/inhouse/css/jquery-jvert-tabs-1.1.4.css" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 		/* We add some JavaScript to pages with the comment form

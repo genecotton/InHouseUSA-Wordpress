@@ -61,6 +61,14 @@
 	 */
 	wp_footer();
 ?>
-<script type="text/javascript" src="/wp-content/themes/inhouse/js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8" src="/wp-content/themes/inhouse/js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8" src="/wp-content/themes/inhouse/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" charset="utf-8" src="/wp-content/themes/inhouse/js/jquery-jvert-tabs-1.1.4.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	// Product Page Pop Up Screenshots
+	$("area[rel^='prettyPhoto']").prettyPhoto();	
+});
+</script>
 </body>
 </html>

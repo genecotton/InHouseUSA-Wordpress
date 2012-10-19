@@ -1,0 +1,96 @@
+.vtabs {
+	/* a border is required for IE otherwise the tab panels will not be aligned correctly. */
+	position: relative;  border: 1px solid #ffffff;
+}
+.vtabs .vtabs-tab-column {
+	position: absolute; left: 0; margin: 0; width: 170px; min-width: 170px;
+}
+.vtabs .vtabs-tab-column ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+/* css for tab that is open */
+.vtabs .vtabs-tab-column ul li.open, .vtabs .vtabs-tab-column ul li.closed {
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 10px 20px;
+	margin-bottom: 1px;
+	/* round corners do not work in IE */
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+	min-height:20px;
+	z-index: 10;
+	cursor: pointer;
+}
+/* css for tab that is closed */
+.vtabs .vtabs-tab-column ul li.closed {
+	background-color: #bbbbbb;
+	border-right: 1px solid #777777;
+	background-image: url("/wp-content/themes/inhouse/images/ClosedTabBackground.png");
+	background-repeat:repeat-x;	
+}
+/* css for tab hover */	
+.vtabs .vtabs-tab-column ul li:hover {
+	background-color: #efefef;
+	background-image: url("/wp-content/themes/inhouse/images/ClosedTabBackgroundHover.png");
+	background-repeat:repeat-x;		
+}
+/* css for link on tab that's open */
+.vtabs .vtabs-tab-column ul li a.open, .vtabs .vtabs-tab-column ul li a.closed {
+	font: 18px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	color: #555;
+}
+/* css for link on tab that's closed */
+.vtabs .vtabs-tab-column ul li a.closed {
+	color: #888;
+}	
+.vtabs .vtabs-content-column {
+	padding: 0px;
+	margin: 0px;
+}
+/* css for the content panels */
+.vtabs .vtabs-content-column .vtabs-content-panel {
+	background-color: #ffffff;
+	padding: 40px;
+	margin: 0px;
+	-moz-border-radius-topright: 9px;
+	-moz-border-radius-bottomright: 9px;
+	-moz-border-radius-bottomleft: 9px;
+	-webkit-border-top-right-radius: 9px;
+	-webkit-border-bottom-right-radius: 9px;	
+	-webkit-border-bottom-left-radius: 9px;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-left: 1px solid #999999;
+	font-size: 12px;
+	line-height: 18px;
+}
+.vtabs .vtabs-content-column .vtabs-content-panel h2 {
+	font-size: 24px;
+	color: #EA7F1E;
+	margin: 0px 0px 20px;
+}
+.vtabs .vtabs-content-column .vtabs-content-panel .imgRight {
+	float: right;
+	margin: 0px 0px 20px 20px;
+}
+.vtabs .vtabs-content-column .vtabs-content-panel .imgLeft {
+	float: left;
+	margin: 0px 20px 20px 0px;
+}
+
+.vtabs .vtabs-content-column .vtabs-content-panel .productFeatureItem {
+	border-bottom: solid 1px #999;
+	padding: 30px 0px 15px;
+}

@@ -15,6 +15,10 @@
 
 	 // Contact Form Auto Fill Subject Field
 	 $('#si_contact_subject1').val(urlParams["subject"]);
+	 
+	 // Product page vertical tabs
+	 $("#vtabs1").jVertTabs();
+	 
  });
 
 
